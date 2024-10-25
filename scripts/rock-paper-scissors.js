@@ -6,15 +6,6 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 
 updateScoreElement();
 
-function greet() {
-  let name = prompt('Hola, Escribe tu nombre...');
-  document.querySelector('.js-result')
-    .innerHTML = `Hey, ${name} : ) , prueba tu suerte!`; 
-  if(!name){
-    document.querySelector('.js-result')
-    .innerHTML = `Prueba tu suerte persona misteriosa...`; 
-  }
-}
 greet();
 
 function playGame(playerMove){
@@ -88,6 +79,15 @@ function playGame(playerMove){
       computerMove = 'scissors';
     }
     return computerMove;
+  }
+  function greet() {
+    let name = prompt('Hola, Escribe tu nombre...');
+    document.querySelector('.js-result')
+      .innerHTML = `Hey, ${name} : ) , prueba tu suerte!`; 
+    if(!name){
+      document.querySelector('.js-result')
+      .innerHTML = `Prueba tu suerte persona misteriosa...`; 
+    }
   }
 
   
