@@ -58,7 +58,7 @@ function playGame(playerMove){
     .innerHTML = result;
   
   document.querySelector('.js-moves')
-    .innerHTML = `You <img src="images/${playerMove}-emoji.png" alt="" class="move-icon"> <img src="images/${computerMove}-emoji.png" alt="" class="move-icon"> Computer`
+    .innerHTML = `You <img src="../images/${playerMove}-emoji.png" alt="" class="move-icon"> <img src="../images/${computerMove}-emoji.png" alt="" class="move-icon"> Computer`
   }
 
   function updateScoreElement() {
@@ -82,10 +82,10 @@ function playGame(playerMove){
   }
   function greet() {
     let name = prompt('Hola, Escribe tu nombre...');
-    document.querySelector('.js-result')
+    document.querySelector('.js-guess')
       .innerHTML = `Hey, ${name} : ) , prueba tu suerte!`; 
     if(!name){
-      document.querySelector('.js-result')
+      document.querySelector('.js-guess')
       .innerHTML = `Prueba tu suerte persona misteriosa...`; 
     }
   }
