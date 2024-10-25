@@ -43,3 +43,8 @@ body {
 .js-score {
   margin-top: 40px;
 }
+.js-guess{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
