@@ -83,12 +83,15 @@ function pickComputerMove() {
 }
 function greet() {
   let name = prompt('Hola, Escribe tu nombre...');
-  document.querySelector('.js-guess')
-    .innerHTML = `Hey, ${name} : ) , prueba tu suerte!`;
-  if (!name) {
-    document.querySelector('.js-guess')
-      .innerHTML = `Prueba tu suerte persona misteriosa...`;
+
+  if (name === 'Nahomi' || name === 'nahomi' || name === 'NAHOMI') {
+    document.querySelector('.js-guess').innerHTML = `Hey, Nanamichi : ) , prueba tu suerte!`;
+  } else if (!name) {
+    document.querySelector('.js-guess').innerHTML = `Prueba tu suerte persona misteriosa...`;
+  } else {
+    document.querySelector('.js-guess').innerHTML = `Hey, ${name} : ) , prueba tu suerte!`;
   }
 }
+
 
 
